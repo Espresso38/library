@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #cbd5e1;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: #431407;
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 80vw;
+    gap: 15px;
+    padding: 15px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #4b5563;
+}
+
+.card p {
+    font-size: 1.2rem;
+    padding: 4px;
+}
+
+.card button {
+    padding: 5px 10px;
+    border-radius: 30px;
+}
+
+.status {
+    background-color: #15803d;
+}
+
+.del {
+    background-color: #b91c1c;
+}
