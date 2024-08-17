@@ -1,10 +1,14 @@
 const myLibrary = [];
 
-function Book() {
-
+function Book(author, title, page) {
+    this.author = author;
+    this.title = title;
+    this.page = page;
 }
 
 function addBook() {
+    const newBook = new Book(author, title, page);
+    myLibrary.push(newBook)
 
 }
 
@@ -35,5 +39,14 @@ closeDialog.addEventListener("click", (e) => {
     if (!allFilled) {
         alert("Please fill all fields.");
         e.preventDefault();
-}
+    }
+    else {
+        const author = document.getElementById("author").value;
+        const title = document.getElementById("title").value;
+        const page = document.getElementById("page").value;
+        
+        addBook(author, title, page);
+        console.log(myLibrary)
+        dialog.close();
+    }
 })
