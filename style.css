@@ -11,7 +11,7 @@ body {
     justify-content: center;
 }
 
-.container {
+#container {
     background-color: #431407;
     margin-top: 10vh;
     display: grid;
